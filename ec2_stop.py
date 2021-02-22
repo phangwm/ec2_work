@@ -31,7 +31,7 @@ def ec2_work(action):
         client.start_instances(InstanceIds=target_instans_ids)
         print('started instances.')
       elif action == 'stop':
-        #client.stop_instances(InstanceIds=target_instans_ids)
+        client.stop_instances(InstanceIds=target_instans_ids)
         print('stopped instances.')
       else:
         print('Invalid action.')
