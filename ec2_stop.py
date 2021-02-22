@@ -42,8 +42,8 @@ def ec2_work(action):
       Instance_list = Instance_list + "<br/>" + x
 
     BODY_HTML = "<html> <head></head> <body> <h1>WX-Dev: Daily Auto Shutdown EC2</h1>  <p>The following instances are auto shutdown<br/> " + Instance_list + "</p> </body> </html>"
-    SENDER = "wmphang@gmail.com"
-    RECIPIENT = "wmphang@gmail.com"
+    SENDER = "sender@gmail.com"
+    RECIPIENT = "to@gmail.com"
     AWS_REGION = "us-east-1"
     SUBJECT = "WX-Dev: Daily Auto Shutdown EC2"
     CHARSET = "UTF-8"
